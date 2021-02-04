@@ -1,0 +1,15 @@
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/FunctionSum.deps.json
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/FunctionSum.runtimeconfig.json
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/FunctionSum.runtimeconfig.dev.json
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/FunctionSum.dll
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/ref/FunctionSum.dll
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/bin/Debug/net5.0/FunctionSum.pdb
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.csprojAssemblyReference.cache
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.AssemblyInfoInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.AssemblyInfo.cs
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.csproj.CoreCompileInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.dll
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/ref/FunctionSum.dll
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.pdb
+/Users/chrisjreader/Desktop/CodePractice/FunctionSum/obj/Debug/net5.0/FunctionSum.genruntimeconfig.cache

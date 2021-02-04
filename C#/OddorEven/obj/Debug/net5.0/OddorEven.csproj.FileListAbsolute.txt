@@ -1,0 +1,15 @@
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/OddorEven.deps.json
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/OddorEven.runtimeconfig.json
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/OddorEven.runtimeconfig.dev.json
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/OddorEven.dll
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/ref/OddorEven.dll
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/bin/Debug/net5.0/OddorEven.pdb
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.csprojAssemblyReference.cache
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.AssemblyInfoInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.AssemblyInfo.cs
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.csproj.CoreCompileInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.dll
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/ref/OddorEven.dll
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.pdb
+/Users/chrisjreader/Desktop/CodePractice/OddorEven/obj/Debug/net5.0/OddorEven.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/LINQfuncs.deps.json
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/LINQfuncs.runtimeconfig.json
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/LINQfuncs.runtimeconfig.dev.json
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/LINQfuncs.dll
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/ref/LINQfuncs.dll
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/bin/Debug/net5.0/LINQfuncs.pdb
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.csprojAssemblyReference.cache
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.AssemblyInfoInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.AssemblyInfo.cs
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.csproj.CoreCompileInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.dll
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/ref/LINQfuncs.dll
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.pdb
+/Users/chrisjreader/Desktop/CodePractice/LINQfuncs/obj/Debug/net5.0/LINQfuncs.genruntimeconfig.cache

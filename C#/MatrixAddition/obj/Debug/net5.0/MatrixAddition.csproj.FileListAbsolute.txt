@@ -1,0 +1,15 @@
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/MatrixAddition.deps.json
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/MatrixAddition.runtimeconfig.json
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/MatrixAddition.runtimeconfig.dev.json
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/MatrixAddition.dll
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/ref/MatrixAddition.dll
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/bin/Debug/net5.0/MatrixAddition.pdb
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.csprojAssemblyReference.cache
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.AssemblyInfoInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.AssemblyInfo.cs
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.csproj.CoreCompileInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.dll
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/ref/MatrixAddition.dll
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.pdb
+/Users/chrisjreader/Desktop/CodePractice/MatrixAddition/obj/Debug/net5.0/MatrixAddition.genruntimeconfig.cache

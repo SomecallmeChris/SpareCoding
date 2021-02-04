@@ -1,0 +1,15 @@
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/Duplicates.deps.json
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/Duplicates.runtimeconfig.json
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/Duplicates.runtimeconfig.dev.json
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/Duplicates.dll
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/ref/Duplicates.dll
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/bin/Debug/net5.0/Duplicates.pdb
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.csprojAssemblyReference.cache
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.AssemblyInfoInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.AssemblyInfo.cs
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.csproj.CoreCompileInputs.cache
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.dll
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/ref/Duplicates.dll
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.pdb
+/Users/chrisjreader/Desktop/CodePractice/C#/Duplicates/obj/Debug/net5.0/Duplicates.genruntimeconfig.cache
