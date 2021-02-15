@@ -10,6 +10,14 @@ To type in SQL terminal:
 
 Code Dependencies:
     Only include function 'CreateLoginTable' on first program run
+
+CODE NEEDS TO BE SPLIT INTO SEPERATE MODULES
+- user_management.cs
+- property_sales.cs
+- property_rentals.cs
+...
+
+Use structures to store variables?
 */
 
 namespace EstateProject
@@ -98,6 +106,7 @@ namespace EstateProject
                     Unavailable(con);
                     break;
                 case 3:
+                    PropertySales(con);
                     Unavailable(con);
                     break;
                 case 4:
@@ -138,7 +147,7 @@ namespace EstateProject
                     break;
                 case 4:
                     Console.WriteLine("Show all users");
-                    Unavailable(con);
+                    ShowAllUsers(con);
                     break;
                 case 5:
                     MainMenu(con);
@@ -247,6 +256,175 @@ namespace EstateProject
                 }
 
         }
+
+        static void ShowAllUsers(MySqlConnection con)
+        {
+            start:
+                Console.Clear();
+                Console.WriteLine("-------Welcome to Reader's Estates-------");
+                Console.WriteLine("\n\nUsers on our System:");
+
+                var sql = @"SELECT * FROM login";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+                Console.WriteLine($"{rdr.GetName(0),-14} {rdr.GetName(1),-10}");
+
+                while (rdr.Read())
+                {
+                    Console.WriteLine($"{rdr.GetString(0),-14} {rdr.GetString(1),-10}");
+                }
+
+                Console.WriteLine("Back to Main Menu? Y/N");
+                string menuDecision = Console.ReadLine();
+            
+                if(menuDecision == "Y")
+                {
+                    rdr.Close();
+                    MainMenu(con);
+                }
+                else{
+                    rdr.Close();
+                    goto start;
+                }
+        }
+
+        static void PropertySales(MySqlConnection con)
+        {
+            Console.Clear();
+            Console.WriteLine("-------Welcome to Reader's Estates-------");
+            Console.WriteLine("\n\nProperty Sales:");
+            Console.WriteLine("1) View Available Properties");
+            Console.WriteLine("2) Properties Recently Sold");
+            Console.WriteLine("3) Add New Property");
+            Console.WriteLine("4) Remove Property");
+            Console.WriteLine("5) Back to Main Menu");
+
+            Console.WriteLine("\n\nWhat would you like to do?");
+            int menuIndex = Convert.ToInt32(Console.ReadLine());
+            switch(menuIndex)
+            {
+                case 1:
+                    ViewSaleProperties(con);
+                    break;
+                case 2:
+                    Unavailable(con);
+                    break;
+                case 3:
+                    AddNewProperty(con);
+                    Unavailable(con);
+                    break;
+                case 4:
+                    Unavailable(con);
+                    break;
+                case 5:
+                    MainMenu(con);
+                    break;
+                default:
+                    MainMenu(con);
+                    break;
+            }
+        }
+
+        static void ViewSaleProperties(MySqlConnection con)
+        {
+            start:
+                Console.Clear();
+                Console.WriteLine("-------Welcome to Reader's Estates-------");
+                Console.WriteLine("\n\nUsers on our System:");
+
+                var sql = @"SELECT * FROM propertySales";
+                MySqlCommand cmd = new MySqlCommand(sql, con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+                Console.WriteLine($"{rdr.GetName(0),-4} {rdr.GetName(1),-25} {rdr.GetName(2),-17}" +
+                                  $"{rdr.GetName(3),-10} {rdr.GetName(4), -15} {rdr.GetName(5), -15}");
+
+                while (rdr.Read())
+                {
+                    Console.WriteLine($"{rdr.GetInt32(0),-4} {rdr.GetString(1),-25}"+ 
+                                      $"{rdr.GetInt32(2),-17} {rdr.GetInt32(3), -10}"+
+                                      $"{rdr.GetString(4),-15} {rdr.GetInt32(5), -15}");
+                }
+
+                Console.WriteLine("Back to Main Menu? Y/N");
+                string menuDecision = Console.ReadLine();
+            
+                if(menuDecision == "Y")
+                {
+                    rdr.Close();
+                    MainMenu(con);
+                }
+                else{
+                    rdr.Close();
+                    goto start;
+                }
+        }
+
+        static void AddNewProperty(MySqlConnection con)
+        {
+            start:
+                Console.Clear();
+                Console.WriteLine("-------Welcome to Reader's Estates-------");
+                Console.WriteLine("\n\nAdd New Property:");
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = con;
+                string decisionAddress = "";
+                string decisionType = "";
+                string address = "";
+                int beds = 0;
+                int bathrooms = 0;
+                string property_type = "";
+                int price = 0;
+
+                while(decisionAddress != "Y")
+                {
+                    Console.WriteLine("Enter property address: ");
+                    address = Console.ReadLine();
+                    Console.WriteLine("Are you sure? Y/N");
+                    decisionAddress = Console.ReadLine();
+                }
+                // Less prone to error hence, no need for check
+                Console.WriteLine("Enter no. beds: ");
+                beds = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter no. bathrooms: ");
+                bathrooms = Convert.ToInt32(Console.ReadLine());
+
+                while(decisionType != "Y")
+                {
+                    Console.WriteLine($"Enter property type for '{address}'");
+                    property_type = Console.ReadLine();
+                    Console.WriteLine("Are you sure? Y/N");
+                    decisionType = Console.ReadLine();
+                }
+
+                Console.WriteLine("Enter property price: ");
+                price = Convert.ToInt32(Console.ReadLine());
+                cmd.CommandText = $@"INSERT INTO propertySales(address, beds, bathrooms, property_type, price)
+                                     VALUES('{address}', {beds}, {bathrooms}, '{property_type}', {price})";
+                cmd.ExecuteNonQuery();
+            
+                Console.WriteLine("New property added, back to Main Menu? Y/N");
+                string menuDecision = Console.ReadLine();
+
+                if(menuDecision == "Y")
+                {
+                    MainMenu(con);
+                }
+                else{
+                    Console.WriteLine("Add another property? Y/N");
+                    menuDecision = Console.ReadLine();
+                    
+                    if(menuDecision == "Y")
+                        goto start;
+                    else{
+                        MainMenu(con);
+                    }
+                }
+                goto start;
+        }
+
         static void Main(string[] args)
         {
             string server = "localhost";
