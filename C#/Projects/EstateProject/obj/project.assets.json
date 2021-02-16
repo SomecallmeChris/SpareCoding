@@ -1151,11 +1151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/chrisjreader/Desktop/CodePractice/C#/EstateProject/EstateProject.csproj",
+      "projectUniqueName": "/Users/chrisjreader/Desktop/CodePractice/C#/Projects/EstateProject/EstateProject.csproj",
       "projectName": "EstateProject",
-      "projectPath": "/Users/chrisjreader/Desktop/CodePractice/C#/EstateProject/EstateProject.csproj",
+      "projectPath": "/Users/chrisjreader/Desktop/CodePractice/C#/Projects/EstateProject/EstateProject.csproj",
       "packagesPath": "/Users/chrisjreader/.nuget/packages/",
-      "outputPath": "/Users/chrisjreader/Desktop/CodePractice/C#/EstateProject/obj/",
+      "outputPath": "/Users/chrisjreader/Desktop/CodePractice/C#/Projects/EstateProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/chrisjreader/.nuget/NuGet/NuGet.Config"

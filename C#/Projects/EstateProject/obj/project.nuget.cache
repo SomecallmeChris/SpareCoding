@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wRAjcd2xv1CjutqVsA6+6/+CrJWNL0VPFJ4QN6X+g9vY7f2IaXmpXW1LoTN/TjtC1KqxvxMrkD45He3GEdMQ4Q==",
+  "dgSpecHash": "pza0RyFUlVlQE0F743lZDd+wTblpPRFtbwIWYyVBYzpw5MLwfLffM8rLSZPdWopj9QQK0T4w+OmQIBALpaqu/g==",
   "success": true,
-  "projectFilePath": "/Users/chrisjreader/Desktop/CodePractice/C#/EstateProject/EstateProject.csproj",
+  "projectFilePath": "/Users/chrisjreader/Desktop/CodePractice/C#/Projects/EstateProject/EstateProject.csproj",
   "expectedPackageFiles": [
     "/Users/chrisjreader/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/Users/chrisjreader/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",

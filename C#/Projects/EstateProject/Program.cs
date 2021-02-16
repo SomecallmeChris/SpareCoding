@@ -61,9 +61,8 @@ namespace EstateProject
 
             while(reader.Read())
             {
-                Console.WriteLine("\n\nsuccess\n\n");
                 reader.Close();
-                return;
+                MainMenu(con);
             }
             Console.WriteLine($"Incorrect username/password");
             Console.WriteLine("\nTry again: ");
@@ -93,6 +92,7 @@ namespace EstateProject
             Console.WriteLine("2) Property Rentals");
             Console.WriteLine("3) Property Sales");
             Console.WriteLine("4) Log Out");
+            Console.WriteLine("5) Exit Application");
 
             Console.WriteLine("\n\nWhat would you like to do?");
             int menuIndex = Convert.ToInt32(Console.ReadLine());
@@ -107,9 +107,11 @@ namespace EstateProject
                     break;
                 case 3:
                     PropertySales(con);
-                    Unavailable(con);
                     break;
                 case 4:
+                    RequestLogin(con);
+                    break;
+                case 5:
                     System.Environment.Exit(0);
                     break;
                 default:
@@ -436,7 +438,6 @@ namespace EstateProject
 
             //CreateLoginTable(con, cmd);
             RequestLogin(con);
-            MainMenu(con);
         }
     }
 }
