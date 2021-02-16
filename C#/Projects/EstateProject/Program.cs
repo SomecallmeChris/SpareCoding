@@ -314,10 +314,9 @@ namespace EstateProject
                     break;
                 case 3:
                     AddNewProperty(con);
-                    Unavailable(con);
                     break;
                 case 4:
-                    Unavailable(con);
+                    RemoveProperty(con);
                     break;
                 case 5:
                     MainMenu(con);
@@ -427,6 +426,64 @@ namespace EstateProject
                 goto start;
         }
 
+        static void RemoveProperty(MySqlConnection con)
+        {
+            deleteProperty:
+                Console.Clear();
+                Console.WriteLine("-------Welcome to Reader's Estates-------");
+                Console.WriteLine("\n\nDelete Property:");
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = con;
+                string decisionID = "";
+                string decisionGeneral = "N";
+                int id = 0;
+
+                var sql = @"SELECT * FROM propertySales";
+                MySqlCommand cmd1 = new MySqlCommand(sql, con);
+
+                MySqlDataReader rdr = cmd1.ExecuteReader();
+                Console.WriteLine($"{rdr.GetName(0),-4} {rdr.GetName(1),-25} {rdr.GetName(2),-17}" +
+                                  $"{rdr.GetName(3),-10} {rdr.GetName(4), -15} {rdr.GetName(5), -15}");
+
+                while (rdr.Read())
+                {
+                    Console.WriteLine($"{rdr.GetInt32(0),-4} {rdr.GetString(1),-25}"+ 
+                                      $"{rdr.GetInt32(2),-17} {rdr.GetInt32(3), -10}"+
+                                      $"{rdr.GetString(4),-15} {rdr.GetInt32(5), -15}");
+                }
+                rdr.Close();
+                while(decisionID != "Y")
+                {
+                    Console.WriteLine("Enter property ID to delete: ");
+                    id = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Are you sure? Y/N");
+                    decisionID= Console.ReadLine();
+                }
+                cmd.CommandText = $@"DELETE FROM propertySales 
+                                     WHERE id = {id}";
+                int deleteSuccess = cmd.ExecuteNonQuery();
+
+                if(deleteSuccess == 1)
+                {
+                    Console.WriteLine($"Property was succesfully removed.");
+                    Console.WriteLine("Back to Main Menu? Y/N");
+                    decisionGeneral = Console.ReadLine();
+                    if(decisionGeneral == "Y")
+                        MainMenu(con);
+                    else{
+                        Console.WriteLine("Delete another property? Y/N");
+                        decisionGeneral = Console.ReadLine();
+                        if(decisionGeneral == "Y")
+                            goto deleteProperty;
+                        else{
+                            MainMenu(con);
+                        }
+                    }
+
+                }
+
+        }
         static void Main(string[] args)
         {
             string server = "localhost";
